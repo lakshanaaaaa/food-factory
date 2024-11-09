@@ -1,0 +1,54 @@
+.alll{
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container{
+    min-height: 250px;
+    width: 450px;
+    border-radius: 1rem;
+    background: rgb(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 1.5rem;
+    color: #fff;
+    margin:5% auto;
+}
+
+body{
+    background-image: url("picture/pexels-fwstudio-33348-129731.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.time{
+    height: 25px;
+}
+
+.bigbox
+{
+    height: 100px;
+    width:60%;
+}
+
+p{
+    text-transform: uppercase;
+}
+
+button{
+    height: 60px;
+    width: 150px;
+    font-size: larger;
+    margin-left: 32%;
+}
+button:hover{
+    background-color: rgb(97, 198, 124);
+    cursor: pointer;
+}
+h1{
+    padding-top: 40px;
+    text-align: center;
+}

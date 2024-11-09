@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap");
+
+* {
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.gfont {
+    font-family: "Anton SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 12%;
+  }
+body{
+    background-image: url("picture/calum-lewis-vA1L1jRTM70-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100px;
+}
+
+
+
+body::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.5;
+    width: 10%;
+    height: 50%;
+    background: url("picture/calum-lewis-vA1L1jRTM70-unsplash.jpg");
+    background-position: center;
+}
+
+nav {
+    position: fixed;
+    padding: 25px 60px;
+    z-index: 1;
+}
+
+nav a img {
+    width: 167px;
+}
+.main {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 4px;
+    padding: 50px;
+    width: 350px;
+    transform: translate(-50%, -50%);
+    background: rgba(232, 227, 227, 0.75);
+}
+
+/*signuptext*/
+.main h2 {
+    color: #1b0f0f;
+    font-size: 2rem;
+}
+
+.main form {
+    margin: 25px 0 65px;
+}
+
+form .sub {
+    height: 50px;
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.sub input {
+    height: 100%;
+    width: 100%;
+    background: #e9e8ed;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    color: #141111;
+    font-size: 1rem;
+    padding: 0 20px;
+}
+
+.sub label {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    pointer-events: none;
+    color: #8c8c8c;
+    transition: all 0.1s ease;
+}
+
+.sub input:is(:focus, :valid)~label {
+    font-size: 0.75rem;
+    transform: translateY(-130%);
+}
+
+form button {
+    width: 100%;
+    padding: 16px 0;
+    font-size: 1rem;
+    background: #033c16;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    margin: 25px 0 10px;
+    cursor: pointer;
+    transition: 0.1s ease;
+}
+
+form button:hover {
+    background: #4da42b54;
+}
+
+.main a {
+    text-decoration: none;
+}
+
+.main a:hover {
+    text-decoration: underline;
+}
+
+.main :where(label, p, small, a) {
+    color: #b3b3b3;
+}
+
+
+
+.main p a {
+    color: #fff;
+}
+
+.main small {
+    display: block;
+    margin-top: 15px;
+    color: #b3b3b3;
+}
+
+.main small a {
+    color: #0071eb;
+}
+
+@media (max-width: 740px) {
+    body::before {
+        display: none;
+    }
+
+    nav, .mainr {
+        padding: 20px;
+    }
+
+    nav a img {
+        width: 140px;
+    }
+
+    .main {
+        width: 100%;
+        top: 43%;
+    }
+
+    .main form {
+        margin: 25px 0 40px;
+    }
+}
+.logo{
+    border-radius: 50%;
+}

@@ -1,3 +1,283 @@
-body{
-    background-image:url('food1.jpg');
+* {
+  margin: 0px;
+  padding: 0;
 }
+.h3{
+  height: 200px;
+  width:150px;
+  overflow: scroll;
+}
+.road{
+  height: 95vh;
+  width: 95vw;
+  margin-top: 10vh; 
+  background-image: url(picture/pink\ road.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#foodfactoryimg{
+  height: 300px;
+  width: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.first
+{
+  margin-top: 80px;
+
+}
+/* .first{
+  height: 100vh;
+  width: 100vw;   
+  background-image: url(picture/top-view-indian-food-with-copy-space.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+} */
+
+body {
+  background-image: url('food1.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.dia {
+  font-family: "Playwrite IT Moderna", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 55px;
+}
+
+.buttt {
+
+
+  margin-left: 50%;
+  font-size: 35px;
+  background-color: gray;
+  font-family: "Playwrite IT Moderna", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  border-radius: 40%;
+  padding: 10px 5px;
+}
+
+.buttt:hover {
+  background-color: rgb(172, 229, 231);
+}
+
+.content {
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/* glass effect */
+.glassy {
+  max-width: 1250px;
+
+  background: #F1E5D1;
+  box-shadow: 0 8px 32px 0 rgb(53 53 59 / 37%);
+  backdrop-filter: blur(55px);
+  border: 1px solid rgba(143, 89, 89, 0.659);
+  border-radius: 10px;
+  padding: 2px;
+}
+
+.textbox {
+  margin: 30px;
+}
+
+.icon {
+  justify-content: space-around;
+}
+
+
+
+
+
+
+.buttt {
+  font-family: "Playwrite IT Moderna", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style:normal;
+}
+.search-cart-login {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.search-cart-login input {
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+}
+
+
+
+
+
+.buttonss{
+  margin-left: 42%;
+  margin-top: 7%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #987070;
+  padding: 10px 20px;
+  color: rgb(255, 255, 255);
+}
+.logo h1 {
+  margin:0;
+}
+nav {
+  flex-grow:1;
+  text-align: center;
+}
+.nav-links {
+  list-style: none;
+  display:flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.nav-links li {
+  margin: 0 10px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 5px 10px;
+  transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: #C39898;
+}
+
+.search-cart-login {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.search-cart-login input {
+  padding: 5px;
+  border: none;
+  border-radius: 3px;
+}
+
+.search-cart-login .login,
+.search-cart-login .cart {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 5px 10px;
+  border: 1px solid white;
+  border-radius: 3px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.search-cart-login .login:hover,
+.search-cart-login .cart:hover {
+  background-color: #C39898;
+  color: #141414;
+}
+
+@media (max-width: 768px) 
+{
+  header {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  nav {
+      width: 100%;
+  }
+
+  .nav-links {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+  }
+
+  .search-cart-login {
+      width: 100%;
+      justify-content: space-between;
+      margin-top: 10px;
+  }
+
+  .search-cart-login input {
+      flex-grow: 1;
+  }
+}
+.slide{
+  margin-top: 620px;
+  height: 60 vmin;
+  width: 85 vmin;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+  border:20px solid#987070 ;
+  border-radius: 8px;
+}
+
+.wraper{
+  width: 100%;
+  display: flex;
+  animation: slide 16s infinite;
+}
+@keyframes slide
+{
+ 0%{
+  transform: translateX(0);
+ }
+ 25%{
+  transform: translateX(0);
+ }
+ 30%{
+  transform: translateX(-100%);
+ }
+ 50%{
+  transform: translateX(-100%);
+ }
+ 55%{
+  transform: translateX(-200%);
+ }
+ 75%{
+  transform: translateX(-200%);
+ }
+ 80%{
+  transform: translateX(-300%);
+ }
+ 100%{
+  transform: translateX(-300%);
+ }
+}
+
+img{
+  width: 100%;
+}
+
